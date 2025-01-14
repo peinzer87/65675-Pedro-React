@@ -1,0 +1,7 @@
+.navbarContainer {
+  color: aliceblue;
+  background-color: brown;
+  display: flex;
+  justify-content: space-around;
+  gap: 15px;
+}
