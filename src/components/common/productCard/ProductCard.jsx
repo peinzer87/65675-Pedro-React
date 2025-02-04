@@ -1,9 +1,19 @@
-export const ProductCard = (props) => {
+import { Button } from "@mui/material";
+import { Link } from "react-router-dom";
+import "./productCard.css";
+
+export const ProductCard = ({ imageUrl, title, price, description, id }) => {
   return (
-    <div>
-      <h2>{props.titulo} </h2>
-      <h3>{props.precio}</h3>
-      <h4>{props.descripcion}</h4>
+    <div className="productCard">
+      <img className="imgProduct" src={imageUrl} alt="" />
+      <h2>{title} </h2>
+      <h2>${price}</h2>
+      <h4>{description}</h4>
+      <Link to={`/detail/${id}`}>
+        <Button className="productButton" variant="contained">
+          Ver detalle
+        </Button>
+      </Link>
     </div>
   );
 };
