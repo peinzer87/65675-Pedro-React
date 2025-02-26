@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 // import { products } from "../../../products";
 import { useParams } from "react-router";
 import { Counter } from "../../common/Counter/Counter";
-import "./ItemDetail.css";
+import "./itemDetail.css";
 import { db } from "../../../firebaseConfig";
 import { collection, doc, getDoc } from "firebase/firestore";
 
