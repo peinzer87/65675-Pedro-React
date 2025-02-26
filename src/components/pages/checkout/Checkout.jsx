@@ -4,7 +4,7 @@ import { useContext, useState } from "react";
 import { db } from "../../../firebaseConfig";
 import { addDoc, collection, updateDoc, doc } from "firebase/firestore";
 import { CartContext } from "../../../context/CartContext";
-import "./Checkout.css";
+import "./checkout.css";
 
 export const Checkout = () => {
   const [ticket, setTicket] = useState(null);
