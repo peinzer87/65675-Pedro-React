@@ -1,8 +1,8 @@
 import { AiOutlineShoppingCart } from "react-icons/ai";
 import { Link } from "react-router";
-import "./cartWidget.css";
 import { useContext } from "react";
 import { CartContext } from "../../../context/CartContext";
+import "./cartWidget.css";
 
 export const CartWidget = () => {
   const { getTotalItem } = useContext(CartContext);
