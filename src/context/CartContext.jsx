@@ -24,7 +24,6 @@ export const CartContextProvider = ({ children }) => {
     });
   };
   // };
-
   const updateQuantity = (id, cantidad) => {
     setCart((prevCart) =>
       prevCart.map((product) =>
