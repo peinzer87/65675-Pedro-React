@@ -1,0 +1,78 @@
+/* Asegurar que la página ocupe toda la pantalla y el footer quede fijo abajo */
+html,
+body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Contenedor principal que empuja el footer hacia abajo */
+.main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* Footer fijo al final */
+.footer {
+  background-color: #caf9d7;
+  color: rgb(20, 28, 20);
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+  position: relative;
+  margin-top: auto;
+}
+
+/* Estructura interna del footer */
+.footerContainer {
+  display: flex;
+  justify-content: space-around;
+  align-items: end;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.footerSection {
+  max-width: 250px;
+}
+
+.footerSection h3 {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+
+.footerSection p {
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+/* Íconos de redes sociales */
+.socialIcons {
+  display: flex;
+  gap: 10px;
+  font-size: 1.5rem;
+}
+
+.icon {
+  text-decoration: none;
+  color: white;
+  transition: transform 0.2s ease-in-out;
+}
+
+.icon:hover {
+  transform: scale(1.2);
+}
+
+/* Sección inferior del footer */
+.footerBottom {
+  margin-top: 20px;
+  border-top: 1px solid white;
+  padding-top: 10px;
+  font-size: 0.8rem;
+}

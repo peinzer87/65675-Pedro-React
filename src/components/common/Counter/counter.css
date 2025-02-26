@@ -1,0 +1,58 @@
+.contador-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #ffffff;
+  padding: 15px;
+  border-radius: 10px;
+  width: fit-content;
+  gap: 18px;
+}
+
+.contador-controls {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+.contador-btn {
+  background: #91b5ed6c;
+  color: rgb(64, 63, 63);
+  border: none;
+  padding: 8px 14px;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.contador-btn:hover {
+  background: #f3b517;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.086);
+}
+
+.contador-valor {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  min-width: 30px;
+  text-align: center;
+}
+
+.agregar-carrito {
+  background: #28a745;
+  color: white;
+  padding: 10px 16px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.agregar-carrito:hover {
+  background: #00d12d;
+}

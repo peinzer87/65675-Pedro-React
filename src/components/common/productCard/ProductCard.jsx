@@ -1,19 +1,22 @@
-import { Button } from "@mui/material";
-import { Link } from "react-router-dom";
+// import { Button } from "@mui/material";
+import { Link } from "react-router";
 import "./productCard.css";
 
 export const ProductCard = ({ imageUrl, title, price, description, id }) => {
   return (
-    <div className="productCard">
-      <img className="imgProduct" src={imageUrl} alt="" />
-      <h2>{title} </h2>
-      <h2>${price}</h2>
-      <h4>{description}</h4>
-      <Link to={`/detail/${id}`}>
-        <Button className="productButton" variant="contained">
+    <Link to={`/detail/${id}`} style={{ textDecoration: "none" }}>
+      <div className="productCard">
+        <img className="imgProduct" src={imageUrl} alt={title} />
+        <div className="textContainer">
+          <h2>{title}</h2>
+          ⭐⭐⭐⭐⭐
+          <h3>${price}</h3>
+          <h4>{description}</h4>
+          {/* <Button className="productButton" variant="contained">
           Ver detalle
-        </Button>
-      </Link>
-    </div>
+        </Button> */}
+        </div>
+      </div>
+    </Link>
   );
 };

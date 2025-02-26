@@ -1,7 +1,15 @@
 .itemList {
-  margin: 60px;
+  margin: 50px;
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
-  gap: 30px;
-  padding-top: 60px;
+  gap: 34px;
+  padding-top: 40px;
+}
+.loading {
+  font-size: 128px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
