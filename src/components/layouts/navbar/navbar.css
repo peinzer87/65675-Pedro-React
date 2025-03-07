@@ -15,8 +15,16 @@
 .logo {
   border-radius: 50%;
   width: 90px;
-  height: auto;
+  height: 90px; /* Asegurar forma circular */
+  object-fit: cover; /* Mantener la proporción de la imagen */
+  border: 2px solid rgba(255, 255, 255, 0.5); /* Borde claro sutil */
+
+  /* Sombra externa para profundidad */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4),
+    /* Sombra debajo */ inset 4px 4px 6px rgba(255, 255, 255, 0.4),
+    /* Luz interna arriba izquierda */ inset -4px -4px 6px rgba(0, 0, 0, 0.3); /* Sombra interna abajo derecha */
 }
+
 .logoNombre {
   display: flex;
   align-items: center;
@@ -30,7 +38,7 @@
   color: #ffcc14; /* Mantiene el color dorado */
   text-transform: uppercase; /* Hace que el nombre se vea más elegante */
   letter-spacing: 2px; /* Añade un pequeño espaciado entre letras */
-  text-shadow: 2px 2px 4px rgba(131, 128, 128, 0.5); /* Agrega un efecto de sombra para más contraste */
+  text-shadow: 2px 2px 4px rgba(100, 97, 97, 0.816); /* Agrega un efecto de sombra para más contraste */
   display: flex;
   align-items: center; /* Asegura que el texto se alinee correctamente */
 }
@@ -45,13 +53,13 @@
   text-decoration: none;
   font-size: 146x;
   font-weight: 500;
-  color: #555;
+  color: #3f3e3e;
   transition: color 0.3s ease;
 }
 
 .navLinks a:hover {
-  text-decoration: underline;
-  color: #202020;
+  transform: scale(1.1);
+  color: #343328;
 }
 
 .cart {

@@ -35,23 +35,33 @@ body {
   box-shadow: 0 0 5px rgba(26, 163, 54, 0.5);
 }
 
-/* Botón estilizado */
 .form-container button {
-  background: #28a745;
+  width: 100%;
+  background: linear-gradient(to bottom, #30c752, #28a745);
   color: white;
-  border: none;
   padding: 12px;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: bold;
   border-radius: 8px;
+  border: none;
   cursor: pointer;
-  transition: all 0.3s;
-  width: 100%;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+.form-container button:hover {
+  background: linear-gradient(to bottom, #2fe65a, #1faa3e);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
-.form-container button:hover {
-  background: #00d12d;
-  transform: scale(1.02);
+.form-container button:active {
+  background: linear-gradient(to bottom, #079426, rgb(20, 102, 20));
+  transform: translateY(1px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
 }
 
 /* Mensaje de compra realizada */

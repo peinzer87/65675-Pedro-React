@@ -1,22 +1,28 @@
 .cartContainer {
-  position: relative;
   display: flex;
   align-items: center;
+  position: relative; /* Asegura que la burbuja no desplace el ícono */
 }
 
 .cart {
   height: 1.9rem;
-  width: 40px; /* Ajusta el tamaño del icono */
+  width: 60px;
   cursor: pointer;
+  position: relative; /* Mantiene el badge dentro del carrito */
 }
 
+/* Burbuja de cantidad */
 .cartBadge {
   position: absolute;
-  top: -10px;
-  right: -10px;
-  background-color: rgb(255, 70, 70);
+  top: -5px; /* Ajusta la burbuja más cerca del borde */
+  right: -5px;
+  background: radial-gradient(
+    circle at 30% 30%,
+    rgb(255, 110, 110),
+    rgb(190, 30, 30)
+  );
   color: rgb(255, 231, 231);
-  font-size: 0.875rem;
+  font-size: 0.75rem; /* Tamaño fijo para evitar cambios */
   font-weight: bold;
   width: 20px;
   height: 20px;
@@ -24,4 +30,16 @@
   align-items: center;
   justify-content: center;
   border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+
+  /* Sombra para efecto esférico */
+  box-shadow: inset 2px 2px 4px rgba(255, 255, 255, 0.6),
+    0 3px 6px rgba(0, 0, 0, 0.4);
+
+  /* Evita que el número agrande el badge */
+  min-width: 20px;
+  min-height: 20px;
+  line-height: 20px;
+  text-align: center;
+  white-space: nowrap;
 }

@@ -40,19 +40,30 @@
   min-width: 30px;
   text-align: center;
 }
-
 .agregar-carrito {
-  background: #28a745;
+  background: linear-gradient(to bottom, #30c752, #28a745);
   color: white;
-  padding: 10px 16px;
+  padding: 12px 18px;
   font-size: 16px;
   font-weight: bold;
-  border-radius: 6px;
+  border-radius: 8px;
   border: none;
   cursor: pointer;
-  transition: background 0.3s;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 
 .agregar-carrito:hover {
-  background: #00d12d;
+  background: linear-gradient(to bottom, #2fe65a, #1faa3e);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.agregar-carrito:active {
+  background: linear-gradient(to bottom, #079426, rgb(20, 102, 20));
+  transform: translateY(1px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
 }

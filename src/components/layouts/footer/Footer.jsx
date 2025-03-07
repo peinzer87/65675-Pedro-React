@@ -1,4 +1,5 @@
 import "./footer.css";
+import { FaFacebook, FaInstagram, FaTiktok } from "react-icons/fa";
 
 export const Footer = () => {
   return (
@@ -22,13 +23,13 @@ export const Footer = () => {
           <h3>Síguenos</h3>
           <div className="socialIcons">
             <a href="#" className="icon">
-              📘
+              <FaFacebook />
             </a>
             <a href="#" className="icon">
-              🐦
+              <FaTiktok />
             </a>
             <a href="#" className="icon">
-              📸
+              <FaInstagram />
             </a>
           </div>
         </div>

@@ -93,6 +93,7 @@ h1 {
 
 .emptyCartButton,
 .checkoutButton {
+  text-decoration: none;
   padding: 10px 15px;
   border: none;
   border-radius: 6px;
@@ -108,14 +109,31 @@ h1 {
 }
 
 .checkoutButton {
-  text-decoration: none;
-  background: #28a745;
+  background: linear-gradient(to bottom, #30c752, #28a745);
   color: white;
+  padding: 12px 18px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
+
 .checkoutButton:hover {
-  text-decoration: none;
-  background: #00d12d;
-  color: #ffff;
+  background: linear-gradient(to bottom, #2fe65a, #1faa3e);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.checkoutButton:active {
+  background: linear-gradient(to bottom, #079426, rgb(20, 102, 20));
+  transform: translateY(1px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
 }
 
 .emptyCartButton:hover {
